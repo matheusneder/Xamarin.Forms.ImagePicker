@@ -9,7 +9,7 @@ Inject `IImagePickerService` using your favorite container. Service implamentati
 Example:
 
 ```cs
-class ViewModel : INotifyPropertyChanged
+class ViewModel : System.ComponentModel.INotifyPropertyChanged
 {
   public event PropertyChangedEventHandler PropertyChanged;
   private Xamarin.Forms.ImageSource _imageSource;
