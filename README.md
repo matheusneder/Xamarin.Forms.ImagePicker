@@ -14,7 +14,7 @@ class ViewModel : INotifyPropertyChanged
 
   public Xamarin.Forms.ImageSource ImageSource 
   { 
-    get => _imageSource;
+    get { return _imageSource; }
     set
     {
       _imageSource = value;
@@ -30,7 +30,7 @@ class ViewModel : INotifyPropertyChanged
   }
 }
 ```
-
+On View:
 ```xml
 <Image Source="{Binding ImageSource}" />
 ```
