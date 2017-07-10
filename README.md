@@ -26,7 +26,7 @@ class ViewModel : System.ComponentModel.INotifyPropertyChanged
   
   async void PickImage() 
   {
-    // Take service implementation (you may use constructor parameter aproach)
+    // Take service implementation (recommended to use constructor parameter aproach insted)
     IImagePickerService imagePickerService = Xamarin.Forms.DependencyService.Get<IImagePickerService>();
     
     // Pick the image
