@@ -41,4 +41,8 @@ On View:
 <Image Source="{Binding ImageSource}" />
 ```
 
-Get JPEG stream to save on filesystem or send over network: `Stream stream = imagePickerService.ImageSourceUtility.ToJpegStreamAsync(imageSource);`
+Get JPEG stream to save on filesystem or send over network: 
+
+```cs
+Stream stream = imagePickerService.ImageSourceUtility.ToJpegStreamAsync(imageSource);
+```
