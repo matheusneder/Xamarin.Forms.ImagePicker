@@ -44,5 +44,5 @@ On View:
 Get JPEG stream to save on filesystem or send over network: 
 
 ```cs
-Stream stream = imagePickerService.ImageSourceUtility.ToJpegStreamAsync(imageSource);
+Stream stream = await imagePickerService.ImageSourceUtility.ToJpegStreamAsync(imageSource);
 ```
