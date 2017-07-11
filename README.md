@@ -4,7 +4,7 @@ Simple ImagePicker (camera and gallery) with cropper for Xamarin.Forms.
 
 ### Usage
 
-Inject `IImagePickerService` using your favorite container. Service implamentation register is already done by Xamarin.Forms.DependencyAttribute, I tested using Unity container and it works fine with constructor parameter injection. You may also resolve with `Xamarin.Forms.DependencyService.Get<IImagePickerService>()`.
+Inject `IImagePickerService` using your favorite container. Service implementation register is already done by Xamarin.Forms.DependencyAttribute, I tested using Unity container and it works fine with constructor parameter injection. You may also resolve with `Xamarin.Forms.DependencyService.Get<IImagePickerService>()`.
 
 Example:
 
