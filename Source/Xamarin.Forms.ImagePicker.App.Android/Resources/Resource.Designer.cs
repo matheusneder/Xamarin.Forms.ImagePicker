@@ -1260,44 +1260,44 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0c004a
-			public const int abc_background_cache_hint_selector_material_dark = 2131492938;
-			
-			// aapt resource value: 0x7f0c004b
-			public const int abc_background_cache_hint_selector_material_light = 2131492939;
-			
-			// aapt resource value: 0x7f0c004c
-			public const int abc_btn_colored_borderless_text_material = 2131492940;
-			
-			// aapt resource value: 0x7f0c004d
-			public const int abc_btn_colored_text_material = 2131492941;
-			
 			// aapt resource value: 0x7f0c004e
-			public const int abc_color_highlight_material = 2131492942;
+			public const int abc_background_cache_hint_selector_material_dark = 2131492942;
 			
 			// aapt resource value: 0x7f0c004f
-			public const int abc_hint_foreground_material_dark = 2131492943;
+			public const int abc_background_cache_hint_selector_material_light = 2131492943;
 			
 			// aapt resource value: 0x7f0c0050
-			public const int abc_hint_foreground_material_light = 2131492944;
+			public const int abc_btn_colored_borderless_text_material = 2131492944;
+			
+			// aapt resource value: 0x7f0c0051
+			public const int abc_btn_colored_text_material = 2131492945;
+			
+			// aapt resource value: 0x7f0c0052
+			public const int abc_color_highlight_material = 2131492946;
+			
+			// aapt resource value: 0x7f0c0053
+			public const int abc_hint_foreground_material_dark = 2131492947;
+			
+			// aapt resource value: 0x7f0c0054
+			public const int abc_hint_foreground_material_light = 2131492948;
 			
 			// aapt resource value: 0x7f0c0005
 			public const int abc_input_method_navigation_guard = 2131492869;
 			
-			// aapt resource value: 0x7f0c0051
-			public const int abc_primary_text_disable_only_material_dark = 2131492945;
-			
-			// aapt resource value: 0x7f0c0052
-			public const int abc_primary_text_disable_only_material_light = 2131492946;
-			
-			// aapt resource value: 0x7f0c0053
-			public const int abc_primary_text_material_dark = 2131492947;
-			
-			// aapt resource value: 0x7f0c0054
-			public const int abc_primary_text_material_light = 2131492948;
-			
 			// aapt resource value: 0x7f0c0055
-			public const int abc_search_url_text = 2131492949;
+			public const int abc_primary_text_disable_only_material_dark = 2131492949;
+			
+			// aapt resource value: 0x7f0c0056
+			public const int abc_primary_text_disable_only_material_light = 2131492950;
+			
+			// aapt resource value: 0x7f0c0057
+			public const int abc_primary_text_material_dark = 2131492951;
+			
+			// aapt resource value: 0x7f0c0058
+			public const int abc_primary_text_material_light = 2131492952;
+			
+			// aapt resource value: 0x7f0c0059
+			public const int abc_search_url_text = 2131492953;
 			
 			// aapt resource value: 0x7f0c0006
 			public const int abc_search_url_text_normal = 2131492870;
@@ -1308,32 +1308,35 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f0c0008
 			public const int abc_search_url_text_selected = 2131492872;
 			
-			// aapt resource value: 0x7f0c0056
-			public const int abc_secondary_text_material_dark = 2131492950;
-			
-			// aapt resource value: 0x7f0c0057
-			public const int abc_secondary_text_material_light = 2131492951;
-			
-			// aapt resource value: 0x7f0c0058
-			public const int abc_tint_btn_checkable = 2131492952;
-			
-			// aapt resource value: 0x7f0c0059
-			public const int abc_tint_default = 2131492953;
-			
 			// aapt resource value: 0x7f0c005a
-			public const int abc_tint_edittext = 2131492954;
+			public const int abc_secondary_text_material_dark = 2131492954;
 			
 			// aapt resource value: 0x7f0c005b
-			public const int abc_tint_seek_thumb = 2131492955;
+			public const int abc_secondary_text_material_light = 2131492955;
 			
 			// aapt resource value: 0x7f0c005c
-			public const int abc_tint_spinner = 2131492956;
+			public const int abc_tint_btn_checkable = 2131492956;
 			
 			// aapt resource value: 0x7f0c005d
-			public const int abc_tint_switch_thumb = 2131492957;
+			public const int abc_tint_default = 2131492957;
 			
 			// aapt resource value: 0x7f0c005e
-			public const int abc_tint_switch_track = 2131492958;
+			public const int abc_tint_edittext = 2131492958;
+			
+			// aapt resource value: 0x7f0c005f
+			public const int abc_tint_seek_thumb = 2131492959;
+			
+			// aapt resource value: 0x7f0c0060
+			public const int abc_tint_spinner = 2131492960;
+			
+			// aapt resource value: 0x7f0c0061
+			public const int abc_tint_switch_thumb = 2131492961;
+			
+			// aapt resource value: 0x7f0c0062
+			public const int abc_tint_switch_track = 2131492962;
+			
+			// aapt resource value: 0x7f0c004c
+			public const int accent = 2131492940;
 			
 			// aapt resource value: 0x7f0c0009
 			public const int accent_material_dark = 2131492873;
@@ -1392,8 +1395,8 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f0c003f
 			public const int design_bottom_navigation_shadow_color = 2131492927;
 			
-			// aapt resource value: 0x7f0c005f
-			public const int design_error = 2131492959;
+			// aapt resource value: 0x7f0c0063
+			public const int design_error = 2131492963;
 			
 			// aapt resource value: 0x7f0c0040
 			public const int design_fab_shadow_end_color = 2131492928;
@@ -1425,8 +1428,8 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f0c0049
 			public const int design_textinput_error_color_light = 2131492937;
 			
-			// aapt resource value: 0x7f0c0060
-			public const int design_tint_password_toggle = 2131492960;
+			// aapt resource value: 0x7f0c0064
+			public const int design_tint_password_toggle = 2131492964;
 			
 			// aapt resource value: 0x7f0c0017
 			public const int dim_foreground_disabled_material_dark = 2131492887;
@@ -1497,6 +1500,12 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f0c002c
 			public const int notification_material_background_media_default_color = 2131492908;
 			
+			// aapt resource value: 0x7f0c004a
+			public const int primary = 2131492938;
+			
+			// aapt resource value: 0x7f0c004b
+			public const int primaryDark = 2131492939;
+			
 			// aapt resource value: 0x7f0c002d
 			public const int primary_dark_material_dark = 2131492909;
 			
@@ -1545,17 +1554,20 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f0c003c
 			public const int switch_thumb_disabled_material_light = 2131492924;
 			
-			// aapt resource value: 0x7f0c0061
-			public const int switch_thumb_material_dark = 2131492961;
+			// aapt resource value: 0x7f0c0065
+			public const int switch_thumb_material_dark = 2131492965;
 			
-			// aapt resource value: 0x7f0c0062
-			public const int switch_thumb_material_light = 2131492962;
+			// aapt resource value: 0x7f0c0066
+			public const int switch_thumb_material_light = 2131492966;
 			
 			// aapt resource value: 0x7f0c003d
 			public const int switch_thumb_normal_material_dark = 2131492925;
 			
 			// aapt resource value: 0x7f0c003e
 			public const int switch_thumb_normal_material_light = 2131492926;
+			
+			// aapt resource value: 0x7f0c004d
+			public const int window_background = 2131492941;
 			
 			static Color()
 			{
@@ -3012,23 +3024,23 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f09007b
 			public const int cropImageView = 2131296379;
 			
-			// aapt resource value: 0x7f0900c3
-			public const int crop_image_menu_crop = 2131296451;
-			
-			// aapt resource value: 0x7f0900c0
-			public const int crop_image_menu_flip = 2131296448;
-			
-			// aapt resource value: 0x7f0900c1
-			public const int crop_image_menu_flip_horizontally = 2131296449;
+			// aapt resource value: 0x7f0900c5
+			public const int crop_image_menu_crop = 2131296453;
 			
 			// aapt resource value: 0x7f0900c2
-			public const int crop_image_menu_flip_vertically = 2131296450;
+			public const int crop_image_menu_flip = 2131296450;
 			
-			// aapt resource value: 0x7f0900be
-			public const int crop_image_menu_rotate_left = 2131296446;
+			// aapt resource value: 0x7f0900c3
+			public const int crop_image_menu_flip_horizontally = 2131296451;
 			
-			// aapt resource value: 0x7f0900bf
-			public const int crop_image_menu_rotate_right = 2131296447;
+			// aapt resource value: 0x7f0900c4
+			public const int crop_image_menu_flip_vertically = 2131296452;
+			
+			// aapt resource value: 0x7f0900c0
+			public const int crop_image_menu_rotate_left = 2131296448;
+			
+			// aapt resource value: 0x7f0900c1
+			public const int crop_image_menu_rotate_right = 2131296449;
 			
 			// aapt resource value: 0x7f09005d
 			public const int custom = 2131296349;
@@ -3141,8 +3153,8 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f090050
 			public const int list_item = 2131296336;
 			
-			// aapt resource value: 0x7f0900bd
-			public const int masked = 2131296445;
+			// aapt resource value: 0x7f0900bf
+			public const int masked = 2131296447;
 			
 			// aapt resource value: 0x7f0900ab
 			public const int media_actions = 2131296427;
@@ -3357,6 +3369,9 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f090020
 			public const int showTitle = 2131296288;
 			
+			// aapt resource value: 0x7f0900bc
+			public const int sliding_tabs = 2131296444;
+			
 			// aapt resource value: 0x7f09007f
 			public const int smallLabel = 2131296383;
 			
@@ -3432,6 +3447,9 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f09005f
 			public const int title_template = 2131296351;
 			
+			// aapt resource value: 0x7f0900bd
+			public const int toolbar = 2131296445;
+			
 			// aapt resource value: 0x7f090032
 			public const int top = 2131296306;
 			
@@ -3456,8 +3474,8 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			// aapt resource value: 0x7f09000e
 			public const int view_offset_helper = 2131296270;
 			
-			// aapt resource value: 0x7f0900bc
-			public const int visible = 2131296444;
+			// aapt resource value: 0x7f0900be
+			public const int visible = 2131296446;
 			
 			// aapt resource value: 0x7f09009d
 			public const int volume_item_container = 2131296413;
@@ -3679,82 +3697,85 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			public const int design_text_input_password_icon = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int Main = 2130903083;
+			public const int mr_chooser_dialog = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int mr_chooser_dialog = 2130903084;
+			public const int mr_chooser_list_item = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_chooser_list_item = 2130903085;
+			public const int mr_controller_material_dialog_b = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int mr_controller_material_dialog_b = 2130903086;
+			public const int mr_controller_volume_item = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int mr_controller_volume_item = 2130903087;
+			public const int mr_playback_control = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int mr_playback_control = 2130903088;
+			public const int mr_volume_control = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int mr_volume_control = 2130903089;
+			public const int notification_action = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_action = 2130903090;
+			public const int notification_action_tombstone = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_action_tombstone = 2130903091;
+			public const int notification_media_action = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_media_action = 2130903092;
+			public const int notification_media_cancel_action = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_media_cancel_action = 2130903093;
+			public const int notification_template_big_media = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_big_media = 2130903094;
+			public const int notification_template_big_media_custom = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_big_media_custom = 2130903095;
+			public const int notification_template_big_media_narrow = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_big_media_narrow = 2130903096;
+			public const int notification_template_big_media_narrow_custom = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_big_media_narrow_custom = 2130903097;
+			public const int notification_template_custom_big = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_custom_big = 2130903098;
+			public const int notification_template_icon_group = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_icon_group = 2130903099;
+			public const int notification_template_lines_media = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_lines_media = 2130903100;
+			public const int notification_template_media = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_media = 2130903101;
+			public const int notification_template_media_custom = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_media_custom = 2130903102;
+			public const int notification_template_part_chronometer = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int notification_template_part_chronometer = 2130903103;
+			public const int notification_template_part_time = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int notification_template_part_time = 2130903104;
+			public const int select_dialog_item_material = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_item_material = 2130903105;
+			public const int select_dialog_multichoice_material = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int select_dialog_multichoice_material = 2130903106;
+			public const int select_dialog_singlechoice_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int select_dialog_singlechoice_material = 2130903107;
+			public const int support_simple_spinner_dropdown_item = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int support_simple_spinner_dropdown_item = 2130903108;
+			public const int tabs = 2130903108;
+			
+			// aapt resource value: 0x7f030045
+			public const int toolbar = 2130903109;
 			
 			static Layout()
 			{
@@ -3784,12 +3805,6 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 		
 		public partial class String
 		{
-			
-			// aapt resource value: 0x7f070047
-			public const int ApplicationName = 2131165255;
-			
-			// aapt resource value: 0x7f070046
-			public const int Hello = 2131165254;
 			
 			// aapt resource value: 0x7f07001d
 			public const int abc_action_bar_home_description = 2131165213;
@@ -4028,6 +4043,12 @@ namespace Xamarin.Forms.ImagePicker.App.Android
 			
 			// aapt resource value: 0x7f0b0170
 			public const int Animation_Design_BottomSheetDialog = 2131427696;
+			
+			// aapt resource value: 0x7f0b0189
+			public const int AppTheme = 2131427721;
+			
+			// aapt resource value: 0x7f0b018a
+			public const int AppTheme_Base = 2131427722;
 			
 			// aapt resource value: 0x7f0b00b2
 			public const int Base_AlertDialog_AppCompat = 2131427506;

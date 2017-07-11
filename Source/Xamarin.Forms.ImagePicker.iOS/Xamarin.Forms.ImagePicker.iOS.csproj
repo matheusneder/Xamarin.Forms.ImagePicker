@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <OutputPath>bin\iPhoneSimulator\Debug\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

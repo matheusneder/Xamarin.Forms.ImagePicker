@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Xamarin.Forms.ImagePicker.App.Android.Xamarin.Forms.ImagePicker.App.Android" android:versionCode="1" android:versionName="1.0">
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
   <uses-sdk android:minSdkVersion="16" />
   <application android:label="Xamarin.Forms.ImagePicker.App.Android"></application>
 </manifest>
