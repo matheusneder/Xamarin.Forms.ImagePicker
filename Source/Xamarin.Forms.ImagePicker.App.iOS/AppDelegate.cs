@@ -10,7 +10,10 @@ namespace Xamarin.Forms.ImagePicker.App.iOS
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             Forms.Init();
+
+            // Xamarin.Forms.DependencyService didnt work for DependencyAttribute registration.
             DependencyService.Register<ImagePicker.iOS.ImagePickerService>();
+
             LoadApplication(new App());
             return base.FinishedLaunching(application, launchOptions);
         }

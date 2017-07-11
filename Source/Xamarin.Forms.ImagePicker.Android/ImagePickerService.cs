@@ -39,7 +39,7 @@ namespace Xamarin.Forms.ImagePicker.Android
             }
         }
 
-        public Task<ImageSource> PickAsync()
+        public Task<ImageSource> PickImageAsync()
         {
             StartActivity();
 

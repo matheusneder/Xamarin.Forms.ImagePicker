@@ -10,8 +10,8 @@ namespace Xamarin.Forms.ImagePicker
         /// <summary>
         /// Pick a image from camera or gallery.
         /// </summary>
-        /// <returns>Picked image as ImageSource.</returns>
-        Task<ImageSource> PickAsync();
+        /// <returns>Picked image as ImageSource or null when user cancel.</returns>
+        Task<ImageSource> PickImageAsync();
 
         /// <summary>
         /// ImageSource utility.

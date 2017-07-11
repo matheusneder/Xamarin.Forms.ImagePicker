@@ -27,7 +27,7 @@ namespace Xamarin.Forms.ImagePicker.iOS
         private ImageSource _pickAsyncResult;
         private EventWaitHandle _waitHandle = new AutoResetEvent(false);
 
-        public Task<ImageSource> PickAsync()
+        public Task<ImageSource> PickImageAsync()
         {
             _pickAsyncResult = null;
             var viewController = GetTheMostPresentedViewController();

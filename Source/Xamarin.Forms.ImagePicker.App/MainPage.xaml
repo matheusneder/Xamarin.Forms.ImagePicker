@@ -4,6 +4,6 @@
              x:Class="Xamarin.Forms.ImagePicker.App.MainPage">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Image x:Name="image" />
-        <Button Clicked="Button_Clicked" Text="Pick image!" />
+        <Button Clicked="Button_Clicked" Text="Pick Image!" />
     </StackLayout>
 </ContentPage>
