@@ -1,10 +1,10 @@
 ## Xamarin.Forms.ImagePicker
 
-Simple ImagePicker (camera and gallery) with cropper for Xamarin.Forms.
+Simple ImagePicker (camera and gallery) with cropper for Xamarin.Forms (Android and iOS). It bindings native components [ALCameraViewController](https://github.com/AlexLittlejohn/ALCameraViewController) (iOS) and [Android Image Cropper](https://github.com/ArthurHub/Android-Image-Cropper) (Android).
 
 ### Installation
 
-Install [Xamarin.Forms.ImagePicker](https://www.nuget.org/packages/Xamarin.Forms.ImagePicker/) NuGet package on Portable/Shared project, Android project and iOS project (same package for both forms and platform projects).
+Install [Xamarin.Forms.ImagePicker](https://www.nuget.org/packages/Xamarin.Forms.ImagePicker/) NuGet package on Portable/Shared, Android and iOS project (same package for both Xamarin.Forms and platform projects).
 
 #### Android project
 
@@ -48,38 +48,74 @@ Add this assembly decoration to `Properties/AssemblyInfo.cs`:
 
 ### Usage
 
-Inject `IImagePickerService` using your favorite container. Service implementation register is already done by Xamarin.Forms.DependencyAttribute, I tested using Unity container and it works fine with constructor parameter injection. You may also resolve with `Xamarin.Forms.DependencyService.Get<IImagePickerService>()`.
+Inject `IImagePickerService` using your favorite container. Service registration is already done by Xamarin.Forms.DependencyAttribute, I tested using Unity container and it works fine with constructor parameter injection. You may also resolve with `Xamarin.Forms.DependencyService.Get<IImagePickerService>()`.
 
-Example:
+#### Examples
+
+##### Using Codebehind
+
+Code:
+
+```cs
+public partial class MainPage : ContentPage
+{
+    IImagePickerService _imagePickerService;
+
+    public MainPage()
+    {
+        _imagePickerService = DependencyService.Get<IImagePickerService>();
+        InitializeComponent();
+    }
+
+    async void Button_Clicked(object sender, System.EventArgs e)
+    {
+        var imageSource = await _imagePickerService.PickImageAsync();
+
+        if (imageSource != null) // it will be null when user cancel
+        {
+            image.Source = imageSource;
+        }
+    }
+}
+```
+
+View:
+
+```xml
+<Image x:Name="image" />
+<Button Clicked="Button_Clicked" Text="Pick Image!" />
+```
+
+##### Using ViewModel
 
 ```cs
 class ViewModel : System.ComponentModel.INotifyPropertyChanged
 {
-  public event PropertyChangedEventHandler PropertyChanged;
-  private Xamarin.Forms.ImageSource _imageSource;
+    public event PropertyChangedEventHandler PropertyChanged;
+    private Xamarin.Forms.ImageSource _imageSource;
 
-  public Xamarin.Forms.ImageSource ImageSource 
-  { 
-    get { return _imageSource; }
-    set
-    {
-      _imageSource = value;
-      PropertyChanged?.Invoke(nameof(ImageSource));
+    public Xamarin.Forms.ImageSource ImageSource 
+    { 
+        get { return _imageSource; }
+        set
+        {
+            _imageSource = value;
+            PropertyChanged?.Invoke(nameof(ImageSource));
+        }
     }
-  }
   
-  async void PickImage() 
-  {
-    // Get service (recommended to use constructor parameter aproach instead)
-    IImagePickerService imagePickerService = Xamarin.Forms.DependencyService.Get<IImagePickerService>();
+    async void PickImage() 
+    {
+        // Get service (recommended to use constructor parameter aproach instead)
+        IImagePickerService imagePickerService = Xamarin.Forms.DependencyService.Get<IImagePickerService>();
     
-    // Pick the image
-    ImageSource = await imagePickerService.PickAsync();
-  }
+        // Pick the image
+        ImageSource = await imagePickerService.PickAsync();
+    }
 }
 ```
 
-On View:
+View:
 
 ```xml
 <Image Source="{Binding ImageSource}" />
