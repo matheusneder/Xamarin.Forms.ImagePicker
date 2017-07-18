@@ -12,9 +12,9 @@ Edit `Properties/AndroidManifest.xml` by adding permissions for camera and stora
 
 ```xml
 <manifest ... >
-	<!-- Add permissions -->
-	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.CAMERA" />
+    <!-- Add permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
     ...
 </manifest>
 ```
