@@ -32,6 +32,9 @@ Edit `Info.plist`:
     <key>NSPhotoLibraryUsageDescription</key>
     <string>A custom message (will be shown to the user when iOS ask him for permission to access photo library).</string>
     ...
+    <!-- Set MinimumOSVersion to >= 8.0 -->
+    <key>MinimumOSVersion</key>
+    <string>8.0</string> 
   </dict>
 </plist> 
 ```
