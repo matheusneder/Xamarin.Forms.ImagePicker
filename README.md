@@ -1,6 +1,47 @@
-# Xamarin.Forms.ImagePicker
+## Xamarin.Forms.ImagePicker
 
 Simple ImagePicker (camera and gallery) with cropper for Xamarin.Forms.
+
+### Installation
+
+Install [Xamarin.Forms.ImagePicker](https://www.nuget.org/packages/Xamarin.Forms.ImagePicker/) NuGet package on Portable/Shared project, Android project and iOS project (same package for both forms and platform projects).
+
+##### Android
+
+Edit `Properties/AndroidManifest.xml` by adding permissions for camera and storage:
+
+```xml
+<manifest ... >
+	<!-- Add permissions -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+    ...
+</manifest>
+```
+
+##### iOS
+
+Edit `Info.plist`:
+
+```xml
+<plist version="1.0">
+  <dict>
+    ... add this entries to dict element
+    <key>NSCameraUsageDescription</key>
+    <string>A custom message (will be shown to the user when iOS ask him for permission to access camera).</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>A custom message (will be shown to the user when iOS ask him for permission to access photo library).</string>
+    ...
+  </dict>
+</plist> 
+```
+
+Add this assembly decoration to `Properties/AssemblyInfo.cs`:
+
+```cs
+// This is necessary in order to the linker don't discard iOS ImagePickerService implementation
+[assembly: Preserve(typeof(Xamarin.Forms.ImagePicker.iOS.ImagePickerService), AllMembers = true)]
+```
 
 ### Usage
 
@@ -44,10 +85,8 @@ On View:
 Get JPEG stream to save on filesystem or send over network: 
 
 ```cs
-System.IO.Stream stream = await imagePickerService.ImageSourceUtility.ToJpegStreamAsync(imageSource);
-
-// ...
-
-// release when done
-stream.Dispose();
+using(System.IO.Stream stream = await imagePickerService.ImageSourceUtility.ToJpegStreamAsync(imageSource))
+{
+    // ...
+}
 ```
