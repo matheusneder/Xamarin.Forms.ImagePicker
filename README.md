@@ -42,7 +42,7 @@ Edit `Info.plist`:
 Add this assembly decoration to `Properties/AssemblyInfo.cs`:
 
 ```cs
-// This is necessary in order to the linker don't discard iOS ImagePickerService implementation
+// This is necessary to tell the linker to don't discard iOS ImagePickerService implementation
 [assembly: Preserve(typeof(Xamarin.Forms.ImagePicker.iOS.ImagePickerService), AllMembers = true)]
 ```
 
@@ -129,3 +129,11 @@ using(System.IO.Stream stream = await imagePickerService.ImageSourceUtility.ToJp
     // ...
 }
 ```
+
+### Contribute
+
+## Build
+
+Just clone the source and buid on Visual Studio (I used VS 15.2). The role of this project is to provide an uniform Xamarin.Forms API to access native libraries for iOS and Android ([ALCameraViewController](https://github.com/AlexLittlejohn/ALCameraViewController) and [Android Image Cropper](https://github.com/ArthurHub/Android-Image-Cropper)). Each native library need a bindings in order to be acessible from Xamarin. I did this bindings separeted from this projects and it's available at: 
+- [Xamarin.iOS.CameraViewController](https://github.com/matheusneder/Xamarin.iOS.CameraViewController)
+- [Xamarin.Android.ImageCropper] (https://github.com/matheusneder/Xamarin.Android.ImageCropper)
