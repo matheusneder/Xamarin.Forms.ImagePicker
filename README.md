@@ -6,7 +6,7 @@ Simple ImagePicker (camera and gallery) with cropper for Xamarin.Forms.
 
 Install [Xamarin.Forms.ImagePicker](https://www.nuget.org/packages/Xamarin.Forms.ImagePicker/) NuGet package on Portable/Shared project, Android project and iOS project (same package for both forms and platform projects).
 
-##### Android
+#### Android project
 
 Edit `Properties/AndroidManifest.xml` by adding permissions for camera and storage:
 
@@ -19,7 +19,7 @@ Edit `Properties/AndroidManifest.xml` by adding permissions for camera and stora
 </manifest>
 ```
 
-##### iOS
+#### iOS project
 
 Edit `Info.plist`:
 
