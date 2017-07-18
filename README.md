@@ -132,7 +132,7 @@ using(System.IO.Stream stream = await imagePickerService.ImageSourceUtility.ToJp
 
 ### Contribute
 
-## Build
+#### Build
 
 Just clone the source and buid on Visual Studio (I used VS 15.2). The role of this project is to provide an uniform Xamarin.Forms API to access native libraries for iOS and Android ([ALCameraViewController](https://github.com/AlexLittlejohn/ALCameraViewController) and [Android Image Cropper](https://github.com/ArthurHub/Android-Image-Cropper)). Each native library need a bindings as a xamarin library in order to be acessible from Xamarin. I did this bindings separeted from this projects and it's available at: 
 - [Xamarin.iOS.CameraViewController](https://github.com/matheusneder/Xamarin.iOS.CameraViewController)
