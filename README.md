@@ -50,9 +50,7 @@ Add this assembly decoration to `Properties/AssemblyInfo.cs`:
 
 Inject `IImagePickerService` using your favorite container. Service registration is already done by Xamarin.Forms.DependencyAttribute, I tested using Unity container and it works fine with constructor parameter injection. You may also resolve with `Xamarin.Forms.DependencyService.Get<IImagePickerService>()`.
 
-#### Examples
-
-##### Using Codebehind
+#### Example using codebehind
 
 Code:
 
@@ -86,7 +84,7 @@ View:
 <Button Clicked="Button_Clicked" Text="Pick Image!" />
 ```
 
-##### Using ViewModel
+#### Example using ViewModel (MVVM)
 
 ```cs
 class ViewModel : System.ComponentModel.INotifyPropertyChanged
@@ -120,6 +118,8 @@ View:
 ```xml
 <Image Source="{Binding ImageSource}" />
 ```
+
+#### Handling image data
 
 Get JPEG stream to save on filesystem or send over network: 
 
