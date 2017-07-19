@@ -2,9 +2,6 @@
 using UIKit;
 using Xamarin.Forms.Platform.iOS;
 
-// This is necessary in order to the linker don't discard iOS ImagePickerService implementation
-[assembly: Preserve(typeof(Xamarin.Forms.ImagePicker.iOS.ImagePickerService), AllMembers = true)]
-
 namespace Xamarin.Forms.ImagePicker.App.iOS
 {
     [Register("AppDelegate")]

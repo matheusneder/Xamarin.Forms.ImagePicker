@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.0.0</version>
+    <title>Xamarin.Forms.ImagePicker.iOS</title>
+    <authors>Matheus Neder</authors>
+    <owners>Matheus Neder</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package makes part of Xamarin.Forms.ImagePicker and it consist in iOS platform specific implementation. Install Xamarin.Forms.ImagePicker package instead of this.</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <projectUrl>https://github.com/matheusneder/Xamarin.Forms.ImagePicker</projectUrl>
+    <dependencies>
+      <group targetFramework="xamarinios10">
+        <dependency id="Xamarin.Forms" version="2.3.4.247" />
+        <dependency id="Xamarin.iOS.CameraViewController" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

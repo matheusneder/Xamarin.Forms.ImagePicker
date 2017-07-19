@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Xamarin.Forms.ImagePicker.iOS.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Forms.ImagePicker\Xamarin.Forms.ImagePicker.csproj">

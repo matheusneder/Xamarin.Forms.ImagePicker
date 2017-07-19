@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Xamarin.Forms.ImagePicker</id>
+    <version>1.0.0.0</version>
+    <title>Xamarin.Forms.ImagePicker</title>
+    <authors>Matheus Neder</authors>
+    <owners>Matheus Neder</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple ImagePicker (camera and gallery) with cropper for Xamarin.Forms (Android and iOS).</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <projectUrl>https://github.com/matheusneder/Xamarin.Forms.ImagePicker</projectUrl>
+    <tags>xamarin forms ios android camera imagecrop imagepicker</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid10">
+        <dependency id="Xamarin.Forms.ImagePicker.Android" version="1.0.0" />
+      </group>
+      <group targetFramework="Xamarin.iOS10">
+        <dependency id="Xamarin.Forms.ImagePicker.iOS" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,5 +1,5 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿using Foundation;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -33,3 +33,6 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+// This is necessary to tell the linker to don't discard iOS ImagePickerService implementation
+
+[assembly: Preserve(typeof(Xamarin.Forms.ImagePicker.iOS.ImagePickerService), AllMembers = true)]
