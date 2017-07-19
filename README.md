@@ -8,15 +8,12 @@ Install [Xamarin.Forms.ImagePicker](https://www.nuget.org/packages/Xamarin.Forms
 
 #### Android project
 
-Edit `Properties/AndroidManifest.xml` by adding permissions for camera and storage:
+Edit `Properties/AssemblyInfo.cs` by adding permissions for camera and storage:
 
-```xml
-<manifest ... >
-    <!-- Add permissions -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    ...
-</manifest>
+```cs
+// Add permissions
+[assembly: UsesPermission(Android.Manifest.Permission.Camera)]
+[assembly: UsesPermission(Android.Manifest.Permission.ReadExternalStorage)]
 ```
 
 #### iOS project
