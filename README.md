@@ -49,6 +49,8 @@ If it doesn't work, try to add dependency registration on `AppDelegate.FinishedL
 Xamarin.Forms.DependencyService.Register<Xamarin.Forms.ImagePicker.IImagePickerService, Xamarin.Forms.ImagePicker.iOS.ImagePickerService>();
 ```
 
+You may also register `Xamarin.Forms.ImagePicker.iOS.ImagePickerService` implementation for `Xamarin.Forms.ImagePicker.IImagePickerService` interface using any other IoC container.
+
 ### Usage
 
 Inject `IImagePickerService` using your favorite container. Service registration is already done by Xamarin.Forms.DependencyAttribute, I tested using Unity container and it works fine with constructor parameter injection. You may also resolve with `Xamarin.Forms.DependencyService.Get<IImagePickerService>()`.
