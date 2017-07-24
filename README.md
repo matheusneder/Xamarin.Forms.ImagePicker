@@ -40,7 +40,13 @@ Add this assembly decoration to `Properties/AssemblyInfo.cs`:
 
 ```cs
 // This is necessary to tell the linker to don't discard iOS ImagePickerService implementation
-[assembly: Preserve(typeof(Xamarin.Forms.ImagePicker.iOS.ImagePickerService), AllMembers = true)]
+[assembly: Foundation.Preserve(typeof(Xamarin.Forms.ImagePicker.iOS.ImagePickerService), AllMembers = true)]
+```
+
+If it doesn't work, try to add dependency registration on `AppDelegate.FinishedLaunching` method:
+
+```cs
+Xamarin.Forms.DependencyService.Register<Xamarin.Forms.ImagePicker.IImagePickerService, Xamarin.Forms.ImagePicker.iOS.ImagePickerService>();
 ```
 
 ### Usage
