@@ -113,7 +113,7 @@ class ViewModel : System.ComponentModel.INotifyPropertyChanged
         IImagePickerService imagePickerService = Xamarin.Forms.DependencyService.Get<IImagePickerService>();
     
         // Pick the image
-        ImageSource = await imagePickerService.PickAsync();
+        ImageSource = await imagePickerService.PickImageAsync();
     }
 }
 ```
